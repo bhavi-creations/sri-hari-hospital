@@ -98,6 +98,9 @@ Version: 1.0.0
   --ripple-ani-duration: 5s;
 }
 
+.slider {
+  margin-top:500px;
+}
 .home-five {
   --theme-color: #f20000;
   --title-color: #000000;
