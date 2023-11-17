@@ -3718,7 +3718,8 @@ textarea.form-control.is-invalid {
   margin-right: 0;
 }
 .header-top-info li i {
-  color: var(--theme-color);
+  /* color: var(--theme-color); */
+  color:rgb(241, 141, 200);
   margin-right: 10px;
   font-size: 16px;
   vertical-align: middle;
@@ -4348,7 +4349,7 @@ textarea.form-control.is-invalid {
 }
 .footer1-logo img {
   background-color: var(--white-color);
-  padding: 30px;
+  padding: 20px;
   borrder-radius:10px;
 }
 .footer1-logo:before {
