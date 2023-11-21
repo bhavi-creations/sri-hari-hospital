@@ -8338,12 +8338,12 @@ blockquote cite:before {
   text-align: center;
   padding: 60px 0 50px 0;
   background-color: var(--white-color);
-  position: relative;
+  /* position: relative; */
   box-shadow: 0px 5px 37px 0px rgba(28, 53, 95, 0.05);
 }
 .avater-slider-box:before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 20px;
   right: 20px;
@@ -8353,7 +8353,7 @@ blockquote cite:before {
   z-index: -1;
   border-radius: 10px;
 }
-.avater-slider-box .avater {
+/* .avater-slider-box .avater {
   box-shadow: 0px 25px 47.5px 2.5px rgba(39, 71, 125, 0.1);
   padding: 10px;
   background-color: var(--white-color);
@@ -8362,9 +8362,10 @@ blockquote cite:before {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 20px auto;
-}
+} */
 .avater-slider-box .avater img {
-  border-radius: inherit;
+  /* border-radius: inherit; */
+  border-radius:0px;
 }
 
 .testimonail-desc .testi-rating {
