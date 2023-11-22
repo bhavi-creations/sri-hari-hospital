@@ -97,7 +97,15 @@ Version: 1.0.0
   --flaticon: "Flaticon";
   --ripple-ani-duration: 5s;
 }
-
+.breadcumb-wrapper {
+  width: 80%;
+  margin: 0 auto;
+} 
+@media (max-width: 768px) {
+  .breadcumb-wrapper {
+      width: 100%;
+  }
+}
 .slider {
   margin-top:500px;
 }
