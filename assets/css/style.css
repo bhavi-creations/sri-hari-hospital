@@ -11183,3 +11183,7 @@ blockquote cite:before {
 /* .skintitle {
   height:200px;
 } */
+
+.breadcumb-content img{
+  width: 100% !important;
+}

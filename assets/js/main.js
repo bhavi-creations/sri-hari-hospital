@@ -167,7 +167,7 @@
     lastScrollTop = st;
   };
   $(window).on("scroll", function () {
-    stickyMenu($('.sticky-active'), "active", "will-sticky");
+    stickyMenu($('.sticky-active'), "active");
     if ($(this).scrollTop() > 500) {
       $(scrollToTopBtn).addClass('show');
     } else {
