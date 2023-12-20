@@ -8,7 +8,6 @@ require 'vendor/autoload.php'; // Adjust the path to autoload.php based on your 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Assign POST data to variables
     $name = $_POST['name'] ?? '';
-
     $email = $_POST['email'] ?? '';
     $message = $_POST['message'] ?? '';
 
@@ -20,20 +19,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'srimadhuraju@gmail.com'; // Your Gmail email address
-        $mail->Password = 'umlpkduhhhajjahi'; // Your Gmail password
+        $mail->Username = 'srihariskinclinic@gmail.com'; // Your Gmail email address
+        $mail->Password = 'qtpbnrowxcomvegm'; // Your Gmail password
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('srimadhuraju@gmail.com', 'Hindu Dharmika Peetham'); // Your Gmail email and name
-        $mail->addAddress('srimadhuraju@gmail.com', 'Hindu Dharmika Peetham'); // Recipient's email and name
+        $mail->setFrom('srihariskinclinic@gmail.com', 'Sri Hari Skin Clinic'); // Your Gmail email and name
+        $mail->addAddress('srihariskinclinic@gmail.com', 'Sri Hari Skin Clinic'); // Recipient's email and name
 
         // Content
         $mail->isHTML(true);
         $mail->Subject = 'New Message from Contact Form';
         $mail->Body = "
-            <h1>New Message</h1>
+            <h1>New Message From Contact Form</h1>
             <p><strong>Name:</strong> $name</p>
 
             <p><strong>Email:</strong> $email</p>
@@ -41,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ";
 
         $mail->send();
-        echo 'Message has been sent';
+        echo 'Submitted Succesfully';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
