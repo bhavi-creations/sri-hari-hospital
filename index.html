@@ -833,7 +833,7 @@
                     </div>
                 </div> -->
                 <div class="col-xl-12 mb-30 pt-30 pt-xl-0">
-                    <form action="appointment.php" class="form-wrap1 bg-white wow fadeInUp" data-wow-delay="0.3s" method="post">
+                    <form action="homeappointment.php" class="form-wrap1 bg-white wow fadeInUp" data-wow-delay="0.3s" method="post">
                         <div class="form-title-box bg-title">
                             <div class="row justify-content-between align-items-center">
                                 <div class="col-auto">
@@ -848,14 +848,14 @@
                         <div class="form-box">
                             <div class="row">
                                 <div class="col-xl-6 form-group">
-                                    <select class="form-select style2">
+                                    <select name="service" class="form-select style2">
                                         <option hidden disabled selected>Select Services</option>
                                         <option style="border-radius:20px">Skincare Services</option>
                                         <option>Kidney Disease related Services</option>
                                     </select>
                                 </div>
                                 <div class="col-xl-6 form-group">
-                                    <select class="form-select style2">
+                                    <select name="dr_name" class="form-select style2">
                                         <option hidden disabled selected>Choose Doctor</option>
                                         <option>Dr. Rao Sowmya Manasa</option>
                                         <option>Dr. Chelikani Yaswanth</option>
@@ -874,7 +874,7 @@
                                     <i class="fal small fa-phone"></i>
                                 </div>
                                 <div class="col-xl-6 form-group">
-                                    <input type="text" class="dateTime-pick form-control  style2" placeholder="Select Date & Time">
+                                    <input name="date_time" type="text" class="dateTime-pick form-control  style2" placeholder="Select Date & Time">
                                     <i class="fal small fa-calendar-alt"></i>
                                 </div>
                                 <div class="col-xl-12 text-center">

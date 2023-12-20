@@ -10,6 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'] ?? '';
     $phone = $_POST['phone'] ?? '';
     $email = $_POST['email'] ?? '';
+    $service = $_POST['service'] ?? '';
+    $dr_name = $_POST['dr_name'] ?? '';
+    $date_time = $_POST['date_time'] ?? '';
    
 
     // Create a new PHPMailer instance
@@ -20,27 +23,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'srimadhuraju@gmail.com'; // Your Gmail email address
-        $mail->Password = 'umlpkduhhhajjahi'; // Your Gmail password
+        $mail->Username = 'srihariskinclinic@gmail.com'; // Your Gmail email address
+        $mail->Password = 'qtpbnrowxcomvegm'; // Your Gmail password
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('srimadhuraju@gmail.com', 'Hindu Dharmika Peetham'); // Your Gmail email and name
-        $mail->addAddress('srimadhuraju@gmail.com', 'Hindu Dharmika Peetham'); // Recipient's email and name
+        $mail->setFrom('srihariskinclinic@gmail.com', 'Sri Hari Skin Clinic'); // Your Gmail email and name
+        $mail->addAddress('srihariskinclinic@gmail.com', 'Sri Hari Skin Clinic'); // Recipient's email and name
 
         // Content
         $mail->isHTML(true);
         $mail->Subject = 'New Message from Contact Form';
         $mail->Body = "
-            <h1>New Message</h1>
-            <p><strong>Name:</strong> $name</p>
-            <p><strong>Phone:</strong> $phone</p>
-            <p><strong>Email:</strong> $email</p>
+        <h1>New Message From Sri Hari Skin Clinic</h1>
+        <p><strong>Name:</strong> $name</p>
+        <p><strong>Phone:</strong> $phone</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Service:</strong> $service</p>
+        <p><strong>Dr_Name:</strong> $dr_name</p>
+        <p><strong>Date&Time:</strong> $date_time</p>
         ";
 
         $mail->send();
-        echo 'Message has been sent';
+        echo '<SCRIPT>
+        window.alert("submitted Successfully")
+        window.location.href="appointment.html"</SCRIPT>';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
