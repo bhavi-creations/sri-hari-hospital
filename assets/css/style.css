@@ -5699,13 +5699,14 @@ blockquote cite:before {
 }
 /*------------------- 4.10. Hero Area  -------------------*/
 .ls-v6 .ls-bottom-nav-wrapper {
-  position: absolute;
+   position: absolute; 
   left: 100px;
   top: 50% !important;
   transform: translateY(-50%);
   display: inline-block;
   height: -moz-fit-content;
   height: fit-content;
+ 
 }
 .ls-v6 .ls-gui-element.ls-bottom-nav-wrapper a {
   display: block !important;
@@ -5714,21 +5715,33 @@ blockquote cite:before {
   border-color: transparent !important;
   transform: translateX(-50%);
   transition: all ease 0.4s;
+ 
+
 }
 .ls-v6 .ls-gui-element.ls-bottom-nav-wrapper a:first-child {
   margin-top: 0;
+ 
+
 }
 .ls-v6 .ls-gui-element.ls-bottom-nav-wrapper a:last-child {
   margin-bottom: 0;
+ 
+
 }
 .ls-v6 .ls-gui-element.ls-bottom-nav-wrapper a.ls-nav-active:hover, .ls-v6 .ls-gui-element.ls-bottom-nav-wrapper a.ls-nav-active {
   background-color: var(--theme-color) !important;
+ 
+
 }
 .ls-v6 .ls-btn .play-btn {
   --icon-size: 100px;
+ 
+
 }
 .ls-v6 .ls-btn .play-btn i {
   font-size: 24px;
+  
+
 }
 .ls-v6 a.ls-gui-element.ls-nav-prev,
 .ls-v6 a.ls-gui-element.ls-nav-next {
@@ -5746,6 +5759,8 @@ blockquote cite:before {
   visibility: hidden;
   box-shadow: 0px 6px 37px 0px rgba(7, 204, 236, 0.15);
   transition: all ease 0.4s;
+  display: none;
+
 }
 .ls-v6 a.ls-gui-element.ls-nav-prev:before,
 .ls-v6 a.ls-gui-element.ls-nav-next:before {
@@ -11208,10 +11223,10 @@ blockquote cite:before {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px)   {
   /* Your styles go here */
   .vs-hero-wrapper {
-    margin-top:65px;
+    margin-top:165px;
   }
 }
 
@@ -11229,7 +11244,14 @@ blockquote cite:before {
     margin-top:0px;
   }
 }
+@media (min-width:992px){
+  .for_lg{
+    margin-top: 1200px;
+  }
+}
 
-
-
-
+@media (min-width:1200px){
+.circle_btn{
+  visibility: hidden; opacity: 0;
+}
+}
