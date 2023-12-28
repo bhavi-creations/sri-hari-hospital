@@ -291,7 +291,7 @@
     ==============================-->
     <header class="header-wrapper header-layout2">
         <!-- Header Top -->
-        <div class="header-top bg-title py-2 d-none d-md-block fixed-top">
+        <div class="header-top bg-title py-2 d-none d-md-none d-lg-block d-xl-block fixed-top">
             <div class="container py-1">
                 <div class="row justify-content-center justify-content-xl-between">
                     <div class="col-auto">
@@ -301,11 +301,11 @@
                             <li><i class="far fa-clock"></i>Mon - Fri: 8:00 am - 7:00 pm</li>
                         </ul>
                     </div>
-                    <div class="col-auto d-none d-xl-block">
+                    <div class="col-auto d-none d-md-none d-xl-block">
                         <ul class="head-top-links text-end">
-                            <li>
+                            <!-- <li>
                                 <ul class="header-social">
-                                    <!-- <li>
+                                    <li>
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li>
@@ -347,11 +347,13 @@
                 </div>
             </div>
         </div>
+
+<!-- ================================================================ -->
         <!-- Sticky Active -->
         <div class="sticky-wrap">
             <div class="sticky-active">
                 <!-- Header Main -->
-                <div class="header-main py-3 py-lg-0 position-fixed mt-5 bg-light w-100 d-md-block d-none">
+                <div class="header-main py-3 py-lg-0 position-fixed mt-5 bg-light w-100 d-none d-md-none d-lg-block d-xl-block">
                     <div class="container position-relative">
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto d-flex">
@@ -425,6 +427,87 @@
                 </div>
             </div>
         </div>
+
+        <!-- only for medium -->
+        <div class="sticky-wrap">
+            <div class="sticky-active">
+                <!-- Header Main -->
+                <div class="header-main py-3 py-lg-0 position-fixed      bg-light w-100 d-none d-md-block d-lg-none d-xl-none">
+                    <div class="container position-relative">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto d-flex">
+                                <div class="header2-logo">
+                                    <a href="index.html"><img src="assets/img/SRI HARI LOGO.jpg" alt="Logo" height="50"  width="100"></a>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <nav class="main-menu menu-style2 d-none d-lg-block">
+                                <ul>
+                                    <li >
+                                        <a href="index.html">Home </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="Skincare-titlepage.html">Skin care</a>
+                                        <ul class="sub-menu">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <li><a href="Skincare-details1.html">Laser Hair Reduction</a></li>
+                                                    <li><a href="Skincare-details2.html">Hyperpigmentation Treatment</a></li>
+                                                    <li><a href="Skincare-details3.html">Removal of Warts, Mole, Skintags</a></li>
+                                                    <li><a href="Skincare-details4.html">Hairfall Treatments(PRP & GFC)</a></li>
+                                                    <li><a href="Skincare-details5.html">Antiaging treatments like Botox</a></li>
+                                                    <li><a href="Skincare-details6.html">Acne & Acne scar treatment</a></li>
+                                                </div>
+                                                <div class="col-6">
+                                                    <li><a href="Skincare-details7.html">Medifacials</a></li>
+                                                    <li><a href="Skincare-details8.html">Hydrafacial</a></li>
+                                                    <li><a href="Skincare-details9.html">Phototherapy</a></li>
+                                                    <li><a href="Skincare-details10.html">Rashes / Itchy Hives</a></li>
+                                                    <li><a href="Skincare-details11.html">Vitiligo</a></li>
+                                                    <li><a href="Skincare-details12.html">Psoriasis</a></li>
+                                                    <li><a href="Skincare-details13.html">Eczema</a></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="Kidneytitle.html">Kidney Diseases</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="kidney1.html">Acute Kidney Diseases</a></li>
+                                            <li><a href="kidney2.html">Chronic Kidney Diseases</a></li>
+                                            <li><a href="kidney3.html">Blood Pressure</a></li>
+                                            <li><a href="kidney4.html">Diabetes and diabetes associated kidney diseases</a></li>
+                                            <li><a href="kidney5.html">Nephrotic and nephritic syndromes</a></li>
+                                            <li><a href="kidney6.html">urinary tract infections</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                                <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fas fa-bars"></i></button>
+                            </div>
+                            <div class="col-auto d-none d-xl-block">
+                                <div class="header2-btn">
+                                    <a href="#" class="icon-btn style3 searchBoxTggler"><i class="far fa-search"></i></a>
+                                    <a href="#" class="icon-btn style3 sideMenuToggler"><i class="far fa-bars"></i></a>
+                                    <a href="appointment.html" class="vs-btn style2">Appointment<i class="fal fa-calendar-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </header>
     
 <!-- ======================================================================================================================= -->
@@ -510,22 +593,12 @@
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper w-auto ">
-        <!-- <div class="parallax" data-parallax-image="assets/img/breadcurmb/breadcurmb-1-1.jpg"></div> -->
-        <div class="container-fluid z-index-common ">
-            <div class="breadcumb-content">
-                <img class="mobileimg" src="./assets/img/LaserHairReduction(1).jpg"/>
-                <!-- </h1>
-                <div class="breadcumb-menu-wrap">
-                    <i class="far fa-home-lg"></i>
-                    <ul class="breadcumb-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">Laser Hair Reduction</li>
-                    </ul>
-                </div> -->
-            </div>
-        </div>
+
+    <div class="breadcumb-wrapper  w-auto ">
+        <img class="mobileimg mobimg" src="./assets/img/LaserHairReduction(1).jpg" class="img-fluid"  width="" />
     </div>
+
+ 
     <!--==============================
     Service Area
     ==============================-->

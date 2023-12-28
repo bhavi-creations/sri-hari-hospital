@@ -98,7 +98,7 @@ Version: 1.0.0
   --ripple-ani-duration: 5s;
 }
 .breadcumb-wrapper {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 } 
 @media (max-width: 768px) {
@@ -4699,8 +4699,8 @@ textarea.form-control.is-invalid {
   padding-bottom: 0.05px;
   padding-top: 160px;
   margin-bottom: 60px;
-}
 
+}
 /* Large devices */
 @media (max-width: 1199px) {
   .breadcumb-wrapper {
@@ -11193,3 +11193,43 @@ blockquote cite:before {
     margin-top:40px
   }
 }
+
+@media (min-width: 772px) and (max-width: 991px) {
+  /* Your styles go here */
+  .mobimg {
+    margin-top:40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Your styles go here */
+  .mobimg {
+    margin-top:65px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* Your styles go here */
+  .vs-hero-wrapper {
+    margin-top:65px;
+  }
+}
+
+/* for index */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Your styles go here */
+  .medium {
+    margin-top:0px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Your styles go here */
+  .large {
+    margin-top:0px;
+  }
+}
+
+
+
+
