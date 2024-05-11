@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Assign POST data to variables
     $name = $_POST['name'] ?? '';
     $phone = $_POST['phone'] ?? '';
-    $email = $_POST['email'] ?? '';
+    $email = $_POST['email'] ?? '';c:\xampp\htdocs\sri-hari-hospital
     $service = $_POST['service'] ?? '';
     $dr_name = $_POST['dr_name'] ?? '';
     $date_time = $_POST['date_time'] ?? '';
