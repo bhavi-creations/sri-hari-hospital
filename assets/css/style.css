@@ -4351,6 +4351,18 @@ textarea.form-control.is-invalid {
   }
 }
 /*------------------- 4.3. Footer  -------------------*/
+.whatsapp_logo {
+  position: fixed;
+  bottom: 100px;
+  right: 70px;
+  z-index: 9999; /* Ensure it appears on top of other content */
+}
+
+.whatsapp_logo img {
+  width:50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
 .footer1-logo {
   position: relative;
   z-index: 1;
