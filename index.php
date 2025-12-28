@@ -579,9 +579,9 @@
     <section class="vs-hero-wrapper position-relative medium  ">
         <div class="vs-hero-carousel" data-navprevnext="true" data-height="650" data-container="2000" data-slidertype="responsive" >
              
-           <div class="ls-slide" data-ls="duration: 4000; transition2d: 5;">
-                <img src="./assets/img/festivel_sliders/srihari_slider_dussehra.jpg" alt="Hero Image" class="ls-bg slider">
-            </div>
+           <!-- <div class="ls-slide" data-ls="duration: 4000; transition2d: 5;">
+                <img src="./assets/img/festivel_sliders/sri_hari_111.png" alt="Hero Image" class="ls-bg slider">
+            </div> -->
 
            <!--    <div class="ls-slide" data-ls="duration: 4000; transition2d: 5;">
                 <img src="./assets/img/festivel_sliders/sree_krishnna_janmashtami.jpg" alt="Hero Image" class="ls-bg slider">
